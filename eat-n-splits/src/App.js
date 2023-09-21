@@ -79,7 +79,7 @@ function Friend({friend,onSelection}){
  {friend.balance>0 &&(<p className="green"> {friend.name} ows you {(Math.abs(friend.balance))}€</p>)}
  {friend.balance==0 &&(<p >You and your friend   {friend.name}are even</p>)}
 
- <Button onClick={()=>onSelection(friend)}>{selectedFriend?'Close':'Select'}</Button>
+ <Button onClick={()=>onSelection(friend)}>Select</Button>
 
 </li>
   )
