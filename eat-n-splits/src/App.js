@@ -23,5 +23,18 @@ const initialFriends = [
 
 
 export default function App(){
-  return <div>Hell</div>
+  return(
+<div className="sidebar">
+  <div className="app">
+    <FriendsList/>
+
+  </div>
+
+ </div>
+  )
+ 
+}
+
+function FriendsList(){
+  return <ul>List</ul>
 }
